@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>369295313316-niao00u7s16b0jj4kaoq4l1otkcvd5gd.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.369295313316-niao00u7s16b0jj4kaoq4l1otkcvd5gd</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBGz4RDgr04g1neMvZeDoovmyYCSkx4uEQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>369295313316</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>nibm.RUGunarathna-COBSCComp201-019</string>
+	<key>PROJECT_ID</key>
+	<string>parking-34e7b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>parking-34e7b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:369295313316:ios:6fc81ba5f3af5957721931</string>
+</dict>
+</plist>

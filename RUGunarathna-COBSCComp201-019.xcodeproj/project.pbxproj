@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		743E70C32C57CABADE3F741C /* Pods_RUGunarathna_COBSCComp201_019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E167FADAAE6E131637A3C001 /* Pods_RUGunarathna_COBSCComp201_019.framework */; };
+		B67E7365274475E400356649 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67E7364274475E400356649 /* User.swift */; };
+		B67E73682744823F00356649 /* ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67E73672744823F00356649 /* ViewModels.swift */; };
+		B67FEBD52744EA7B0089BDEF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67FEBD42744EA7B0089BDEF /* HomeView.swift */; };
 		B690C3F3274431FB0027A389 /* RUGunarathna_COBSCComp201_019App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B690C3F2274431FB0027A389 /* RUGunarathna_COBSCComp201_019App.swift */; };
 		B690C3F5274431FB0027A389 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B690C3F4274431FB0027A389 /* ContentView.swift */; };
 		B690C3F7274431FF0027A389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B690C3F6274431FF0027A389 /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 		B690C404274432000027A389 /* RUGunarathna_COBSCComp201_019Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B690C403274432000027A389 /* RUGunarathna_COBSCComp201_019Tests.swift */; };
 		B690C40E274432010027A389 /* RUGunarathna_COBSCComp201_019UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B690C40D274432010027A389 /* RUGunarathna_COBSCComp201_019UITests.swift */; };
 		B690C410274432010027A389 /* RUGunarathna_COBSCComp201_019UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B690C40F274432010027A389 /* RUGunarathna_COBSCComp201_019UITestsLaunchTests.swift */; };
+		B690C41D274435130027A389 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B690C41C274435130027A389 /* GoogleService-Info.plist */; };
+		B6E8EB96274450810005D255 /* SingUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E8EB95274450810005D255 /* SingUpView.swift */; };
+		B71766579A57F4CDEB4A50D9 /* Pods_RUGunarathna_COBSCComp201_019Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 766CC11CC016AC0655783B6D /* Pods_RUGunarathna_COBSCComp201_019Tests.framework */; };
+		D65C83571BA538A00E9860F6 /* Pods_RUGunarathna_COBSCComp201_019_RUGunarathna_COBSCComp201_019UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8140437A229D5359E6CAF6 /* Pods_RUGunarathna_COBSCComp201_019_RUGunarathna_COBSCComp201_019UITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		362A904B9E30DDE92B031011 /* Pods-RUGunarathna-COBSCComp201-019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RUGunarathna-COBSCComp201-019.release.xcconfig"; path = "Target Support Files/Pods-RUGunarathna-COBSCComp201-019/Pods-RUGunarathna-COBSCComp201-019.release.xcconfig"; sourceTree = "<group>"; };
+		766CC11CC016AC0655783B6D /* Pods_RUGunarathna_COBSCComp201_019Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RUGunarathna_COBSCComp201_019Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81B6503BD58539E553D25381 /* Pods-RUGunarathna-COBSCComp201-019Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RUGunarathna-COBSCComp201-019Tests.debug.xcconfig"; path = "Target Support Files/Pods-RUGunarathna-COBSCComp201-019Tests/Pods-RUGunarathna-COBSCComp201-019Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C1A4B9F479D42E9CB602A25 /* Pods-RUGunarathna-COBSCComp201-019.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RUGunarathna-COBSCComp201-019.debug.xcconfig"; path = "Target Support Files/Pods-RUGunarathna-COBSCComp201-019/Pods-RUGunarathna-COBSCComp201-019.debug.xcconfig"; sourceTree = "<group>"; };
+		9A6B4C0956A9D074643DDAC0 /* Pods-RUGunarathna-COBSCComp201-019Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RUGunarathna-COBSCComp201-019Tests.release.xcconfig"; path = "Target Support Files/Pods-RUGunarathna-COBSCComp201-019Tests/Pods-RUGunarathna-COBSCComp201-019Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AF8140437A229D5359E6CAF6 /* Pods_RUGunarathna_COBSCComp201_019_RUGunarathna_COBSCComp201_019UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RUGunarathna_COBSCComp201_019_RUGunarathna_COBSCComp201_019UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B535D9E2569B9D84E2EDB715 /* Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests.debug.xcconfig"; path = "Target Support Files/Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests/Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B67E7364274475E400356649 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B67E73672744823F00356649 /* ViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels.swift; sourceTree = "<group>"; };
+		B67FEBD42744EA7B0089BDEF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B690C3EF274431FB0027A389 /* RUGunarathna-COBSCComp201-019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RUGunarathna-COBSCComp201-019.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B690C3F2274431FB0027A389 /* RUGunarathna_COBSCComp201_019App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RUGunarathna_COBSCComp201_019App.swift; sourceTree = "<group>"; };
 		B690C3F4274431FB0027A389 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +62,10 @@
 		B690C409274432010027A389 /* RUGunarathna-COBSCComp201-019UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RUGunarathna-COBSCComp201-019UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B690C40D274432010027A389 /* RUGunarathna_COBSCComp201_019UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RUGunarathna_COBSCComp201_019UITests.swift; sourceTree = "<group>"; };
 		B690C40F274432010027A389 /* RUGunarathna_COBSCComp201_019UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RUGunarathna_COBSCComp201_019UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B690C41C274435130027A389 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B6E8EB95274450810005D255 /* SingUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpView.swift; sourceTree = "<group>"; };
+		E167FADAAE6E131637A3C001 /* Pods_RUGunarathna_COBSCComp201_019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RUGunarathna_COBSCComp201_019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F317D09184E250B25EF4D62C /* Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests.release.xcconfig"; path = "Target Support Files/Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests/Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				743E70C32C57CABADE3F741C /* Pods_RUGunarathna_COBSCComp201_019.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B71766579A57F4CDEB4A50D9 /* Pods_RUGunarathna_COBSCComp201_019Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,12 +89,52 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D65C83571BA538A00E9860F6 /* Pods_RUGunarathna_COBSCComp201_019_RUGunarathna_COBSCComp201_019UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B88DCDB68310CAF1B3EB5FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C1A4B9F479D42E9CB602A25 /* Pods-RUGunarathna-COBSCComp201-019.debug.xcconfig */,
+				362A904B9E30DDE92B031011 /* Pods-RUGunarathna-COBSCComp201-019.release.xcconfig */,
+				B535D9E2569B9D84E2EDB715 /* Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests.debug.xcconfig */,
+				F317D09184E250B25EF4D62C /* Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests.release.xcconfig */,
+				81B6503BD58539E553D25381 /* Pods-RUGunarathna-COBSCComp201-019Tests.debug.xcconfig */,
+				9A6B4C0956A9D074643DDAC0 /* Pods-RUGunarathna-COBSCComp201-019Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		835C2C3E44B8E0EB758552D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E167FADAAE6E131637A3C001 /* Pods_RUGunarathna_COBSCComp201_019.framework */,
+				AF8140437A229D5359E6CAF6 /* Pods_RUGunarathna_COBSCComp201_019_RUGunarathna_COBSCComp201_019UITests.framework */,
+				766CC11CC016AC0655783B6D /* Pods_RUGunarathna_COBSCComp201_019Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B67E7363274475AF00356649 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B67E7364274475E400356649 /* User.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		B67E73662744821A00356649 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				B67E73672744823F00356649 /* ViewModels.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
 		B690C3E6274431FA0027A389 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +142,8 @@
 				B690C402274432000027A389 /* RUGunarathna-COBSCComp201-019Tests */,
 				B690C40C274432010027A389 /* RUGunarathna-COBSCComp201-019UITests */,
 				B690C3F0274431FB0027A389 /* Products */,
+				2B88DCDB68310CAF1B3EB5FC /* Pods */,
+				835C2C3E44B8E0EB758552D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,10 +160,15 @@
 		B690C3F1274431FB0027A389 /* RUGunarathna-COBSCComp201-019 */ = {
 			isa = PBXGroup;
 			children = (
+				B67E73662744821A00356649 /* View Models */,
+				B67E7363274475AF00356649 /* Modules */,
 				B690C3F2274431FB0027A389 /* RUGunarathna_COBSCComp201_019App.swift */,
 				B690C3F4274431FB0027A389 /* ContentView.swift */,
 				B690C3F6274431FF0027A389 /* Assets.xcassets */,
+				B690C41C274435130027A389 /* GoogleService-Info.plist */,
 				B690C3F8274431FF0027A389 /* Preview Content */,
+				B6E8EB95274450810005D255 /* SingUpView.swift */,
+				B67FEBD42744EA7B0089BDEF /* HomeView.swift */,
 			);
 			path = "RUGunarathna-COBSCComp201-019";
 			sourceTree = "<group>";
@@ -134,9 +205,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B690C413274432010027A389 /* Build configuration list for PBXNativeTarget "RUGunarathna-COBSCComp201-019" */;
 			buildPhases = (
+				7E49833DF65E8B03522148C3 /* [CP] Check Pods Manifest.lock */,
 				B690C3EB274431FB0027A389 /* Sources */,
 				B690C3EC274431FB0027A389 /* Frameworks */,
 				B690C3ED274431FB0027A389 /* Resources */,
+				374E3B098DA8BE9D50992280 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +224,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B690C416274432010027A389 /* Build configuration list for PBXNativeTarget "RUGunarathna-COBSCComp201-019Tests" */;
 			buildPhases = (
+				EF0689065A766DA4AB378771 /* [CP] Check Pods Manifest.lock */,
 				B690C3FB274432000027A389 /* Sources */,
 				B690C3FC274432000027A389 /* Frameworks */,
 				B690C3FD274432000027A389 /* Resources */,
@@ -169,9 +243,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B690C419274432010027A389 /* Build configuration list for PBXNativeTarget "RUGunarathna-COBSCComp201-019UITests" */;
 			buildPhases = (
+				6C7BB39E57AC1EC847DF0A2D /* [CP] Check Pods Manifest.lock */,
 				B690C405274432010027A389 /* Sources */,
 				B690C406274432010027A389 /* Frameworks */,
 				B690C407274432010027A389 /* Resources */,
+				A3566F7BF5AA889B8F5CA73B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +309,7 @@
 			files = (
 				B690C3FA274431FF0027A389 /* Preview Assets.xcassets in Resources */,
 				B690C3F7274431FF0027A389 /* Assets.xcassets in Resources */,
+				B690C41D274435130027A389 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,12 +329,119 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		374E3B098DA8BE9D50992280 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RUGunarathna-COBSCComp201-019/Pods-RUGunarathna-COBSCComp201-019-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RUGunarathna-COBSCComp201-019/Pods-RUGunarathna-COBSCComp201-019-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RUGunarathna-COBSCComp201-019/Pods-RUGunarathna-COBSCComp201-019-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C7BB39E57AC1EC847DF0A2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E49833DF65E8B03522148C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RUGunarathna-COBSCComp201-019-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3566F7BF5AA889B8F5CA73B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests/Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests/Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests/Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF0689065A766DA4AB378771 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RUGunarathna-COBSCComp201-019Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B690C3EB274431FB0027A389 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B67E7365274475E400356649 /* User.swift in Sources */,
 				B690C3F5274431FB0027A389 /* ContentView.swift in Sources */,
+				B67E73682744823F00356649 /* ViewModels.swift in Sources */,
+				B67FEBD52744EA7B0089BDEF /* HomeView.swift in Sources */,
+				B6E8EB96274450810005D255 /* SingUpView.swift in Sources */,
 				B690C3F3274431FB0027A389 /* RUGunarathna_COBSCComp201_019App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +597,7 @@
 		};
 		B690C414274432010027A389 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C1A4B9F479D42E9CB602A25 /* Pods-RUGunarathna-COBSCComp201-019.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -441,6 +626,7 @@
 		};
 		B690C415274432010027A389 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 362A904B9E30DDE92B031011 /* Pods-RUGunarathna-COBSCComp201-019.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +655,7 @@
 		};
 		B690C417274432010027A389 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81B6503BD58539E553D25381 /* Pods-RUGunarathna-COBSCComp201-019Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +680,7 @@
 		};
 		B690C418274432010027A389 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A6B4C0956A9D074643DDAC0 /* Pods-RUGunarathna-COBSCComp201-019Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -517,6 +705,7 @@
 		};
 		B690C41A274432010027A389 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B535D9E2569B9D84E2EDB715 /* Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -539,6 +728,7 @@
 		};
 		B690C41B274432010027A389 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F317D09184E250B25EF4D62C /* Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
