@@ -12,6 +12,7 @@
 		B67E73682744823F00356649 /* ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67E73672744823F00356649 /* ViewModels.swift */; };
 		B67FEBD52744EA7B0089BDEF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67FEBD42744EA7B0089BDEF /* HomeView.swift */; };
 		B67FEBD727452BFF0089BDEF /* LaunchView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B67FEBD627452BFF0089BDEF /* LaunchView.storyboard */; };
+		B681EF7C274552A100F3AA7C /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B681EF7B274552A100F3AA7C /* SettingView.swift */; };
 		B690C3F3274431FB0027A389 /* RUGunarathna_COBSCComp201_019App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B690C3F2274431FB0027A389 /* RUGunarathna_COBSCComp201_019App.swift */; };
 		B690C3F5274431FB0027A389 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B690C3F4274431FB0027A389 /* ContentView.swift */; };
 		B690C3F7274431FF0027A389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B690C3F6274431FF0027A389 /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 		B67FEBD42744EA7B0089BDEF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B67FEBD627452BFF0089BDEF /* LaunchView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchView.storyboard; sourceTree = "<group>"; };
 		B67FEBD8274531310089BDEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B681EF7B274552A100F3AA7C /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		B690C3EF274431FB0027A389 /* RUGunarathna-COBSCComp201-019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RUGunarathna-COBSCComp201-019.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B690C3F2274431FB0027A389 /* RUGunarathna_COBSCComp201_019App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RUGunarathna_COBSCComp201_019App.swift; sourceTree = "<group>"; };
 		B690C3F4274431FB0027A389 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				B6E8EB95274450810005D255 /* SingUpView.swift */,
 				B67FEBD42744EA7B0089BDEF /* HomeView.swift */,
 				B67FEBD627452BFF0089BDEF /* LaunchView.storyboard */,
+				B681EF7B274552A100F3AA7C /* SettingView.swift */,
 			);
 			path = "RUGunarathna-COBSCComp201-019";
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 				B67E7365274475E400356649 /* User.swift in Sources */,
 				B690C3F5274431FB0027A389 /* ContentView.swift in Sources */,
 				B67E73682744823F00356649 /* ViewModels.swift in Sources */,
+				B681EF7C274552A100F3AA7C /* SettingView.swift in Sources */,
 				B67FEBD52744EA7B0089BDEF /* HomeView.swift in Sources */,
 				B6E8EB96274450810005D255 /* SingUpView.swift in Sources */,
 				B690C3F3274431FB0027A389 /* RUGunarathna_COBSCComp201_019App.swift in Sources */,

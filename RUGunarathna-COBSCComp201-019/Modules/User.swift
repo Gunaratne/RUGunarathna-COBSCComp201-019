@@ -8,7 +8,7 @@
 import Foundation
 
 struct User: Identifiable{
-    var id: ObjectIdentifier
+    var id: String
     
 //    var id: ObjectIdentifier
     
