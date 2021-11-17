@@ -17,6 +17,7 @@ struct RUGunarathna_COBSCComp201_019App: App {
         WindowGroup {
 //            let viewModel = AppViewModel()
 //            let viewModelA = AppViewModelA()
+//            LaunchView()
             ContentView()
 //                            .environmentObject(viewModel)
 //                            .environmentObject(viewModelA)
