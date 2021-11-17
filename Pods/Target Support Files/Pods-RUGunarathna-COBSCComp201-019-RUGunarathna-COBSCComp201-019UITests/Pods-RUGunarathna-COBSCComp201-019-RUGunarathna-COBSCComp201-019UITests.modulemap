@@ -1,0 +1,6 @@
+framework module Pods_RUGunarathna_COBSCComp201_019_RUGunarathna_COBSCComp201_019UITests {
+  umbrella header "Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
