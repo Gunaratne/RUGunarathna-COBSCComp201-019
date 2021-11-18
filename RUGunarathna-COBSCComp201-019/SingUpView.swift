@@ -59,34 +59,40 @@ struct SingUpView: View {
                         .autocapitalization(.none)
                         .padding()
                         .background(Color(.secondarySystemGroupedBackground))
-
+                    
+                    
                     Button(action:{
                         guard !email.isEmpty, !password.isEmpty else{
                             return
                         }
                         model.addData(name: name, nic: nic, registerationN: registrationN, vehicleN: vehicleN, password: password, email: email)
                         name = ""
+                        nic = ""
                          registrationN = ""
                         vehicleN  = ""
                         password  = ""
                         email = ""
+//                        NavigationLink(destination: BookingView()){
+//
+//                        }
                         
                     },label:{
-                        NavigationLink(destination: HomeView()){
-                            Text("Sign Up")
-                                .foregroundColor(Color.white)
-                                .frame(width: 200, height: 50)
-                                .cornerRadius(8)
-                                .background(Color.blue)
-                        }
+                        Text("Sign Up")
+                            .foregroundColor(Color.white)
+                                                        .frame(width: 200, height: 50)
+                                                        .cornerRadius(8)
+                                                        .background(Color.blue)
                     })
+                   
+
+                        .navigationTitle("Sign Up")
                         .padding()
             
                 }
                 .padding()
                 Spacer()
                 }
-                .navigationTitle("Sign Up")
+                
 
         }
 }
