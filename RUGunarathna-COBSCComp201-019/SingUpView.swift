@@ -9,32 +9,6 @@ import SwiftUI
 import FirebaseAuth
 import Firebase
 
-
-
-
-//
-//class AppViewModelA: ObservableObject{
-//    let auth = Auth.auth()
-//
-//    @Published var signedIn = false
-//    var isSignIn: Bool{
-//        return auth.currentUser != nil
-//    }
-//
-//    func signUp(email: String, password: String){
-//        auth.createUser(withEmail: email, password: password){[weak self]
-//            result, error in guard result != nil, error == nil else{
-//                return
-//            }
-//            //Success
-//            DispatchQueue.main.async {
-//                self?.signedIn = true
-//            }
-//        }
-//    }
-//}
-
-
 struct SingUpView: View {
     @ObservedObject var model = ViewModels()
     @State var email = ""
@@ -98,28 +72,25 @@ struct SingUpView: View {
                         email = ""
                         
                     },label:{
-                        Text("Sign In")
-                            .foregroundColor(Color.white)
-                            .frame(width: 200, height: 50)
-                            .cornerRadius(8)
-                            .background(Color.blue)
+                        NavigationLink(destination: HomeView()){
+                            Text("Sign Up")
+                                .foregroundColor(Color.white)
+                                .frame(width: 200, height: 50)
+                                .cornerRadius(8)
+                                .background(Color.blue)
+                        }
                     })
-                        
+                        .padding()
+            
                 }
+                .padding()
+                Spacer()
                 }
                 .navigationTitle("Sign Up")
-                
-//                .padding()
-//                Spacer()
+
         }
-            
-//            .padding()
 }
-//        .onAppear{
-//            viewModel.signedIn = viewModel.isSignIn
-//        }
-//    }
-    //}
+
 
 
 struct SignIn_Previews: PreviewProvider {

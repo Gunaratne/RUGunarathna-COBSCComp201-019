@@ -73,20 +73,21 @@ struct ContentView: View {
 
 
                     Button(action:{
+//                        NavigationLink(ac, destination: HomeView())
                             guard !email.isEmpty, !password.isEmpty else{
                                 return
                             }
                         modelsign.signData(email: email, password: password)
                         email = ""
                         password = ""
-                    }, label: {
+
+                    }, label: {NavigationLink(destination: HomeView()){
                         Text("Sign In")
                             .foregroundColor(Color.white)
                                                         .frame(width: 200, height: 50)
                                                         .cornerRadius(8)
                                                         .background(Color.blue)
-//                            self.transitionHome()
-//                            NavigationLink(<#LocalizedStringKey#>, destination: SingUpView())
+                    }                        
                     })
                    
                     NavigationLink("Create Account",destination: SingUpView())

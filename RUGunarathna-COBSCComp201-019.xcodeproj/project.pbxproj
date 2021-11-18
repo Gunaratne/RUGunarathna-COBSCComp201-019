@@ -12,7 +12,9 @@
 		B67E73682744823F00356649 /* ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67E73672744823F00356649 /* ViewModels.swift */; };
 		B67FEBD52744EA7B0089BDEF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67FEBD42744EA7B0089BDEF /* HomeView.swift */; };
 		B67FEBD727452BFF0089BDEF /* LaunchView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B67FEBD627452BFF0089BDEF /* LaunchView.storyboard */; };
+		B6805A582746014B0020C48F /* BookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6805A572746014B0020C48F /* BookingView.swift */; };
 		B681EF7C274552A100F3AA7C /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B681EF7B274552A100F3AA7C /* SettingView.swift */; };
+		B689C52D2745F07200926741 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = B689C52C2745F07200926741 /* CodeScanner */; };
 		B690C3F3274431FB0027A389 /* RUGunarathna_COBSCComp201_019App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B690C3F2274431FB0027A389 /* RUGunarathna_COBSCComp201_019App.swift */; };
 		B690C3F5274431FB0027A389 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B690C3F4274431FB0027A389 /* ContentView.swift */; };
 		B690C3F7274431FF0027A389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B690C3F6274431FF0027A389 /* Assets.xcassets */; };
@@ -56,6 +58,7 @@
 		B67FEBD42744EA7B0089BDEF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B67FEBD627452BFF0089BDEF /* LaunchView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchView.storyboard; sourceTree = "<group>"; };
 		B67FEBD8274531310089BDEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B6805A572746014B0020C48F /* BookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingView.swift; sourceTree = "<group>"; };
 		B681EF7B274552A100F3AA7C /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		B690C3EF274431FB0027A389 /* RUGunarathna-COBSCComp201-019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RUGunarathna-COBSCComp201-019.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B690C3F2274431FB0027A389 /* RUGunarathna_COBSCComp201_019App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RUGunarathna_COBSCComp201_019App.swift; sourceTree = "<group>"; };
@@ -78,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B689C52D2745F07200926741 /* CodeScanner in Frameworks */,
 				743E70C32C57CABADE3F741C /* Pods_RUGunarathna_COBSCComp201_019.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,6 +181,7 @@
 				B67FEBD42744EA7B0089BDEF /* HomeView.swift */,
 				B67FEBD627452BFF0089BDEF /* LaunchView.storyboard */,
 				B681EF7B274552A100F3AA7C /* SettingView.swift */,
+				B6805A572746014B0020C48F /* BookingView.swift */,
 			);
 			path = "RUGunarathna-COBSCComp201-019";
 			sourceTree = "<group>";
@@ -224,6 +229,9 @@
 			dependencies = (
 			);
 			name = "RUGunarathna-COBSCComp201-019";
+			packageProductDependencies = (
+				B689C52C2745F07200926741 /* CodeScanner */,
+			);
 			productName = "RUGunarathna-COBSCComp201-019";
 			productReference = B690C3EF274431FB0027A389 /* RUGunarathna-COBSCComp201-019.app */;
 			productType = "com.apple.product-type.application";
@@ -299,6 +307,9 @@
 				Base,
 			);
 			mainGroup = B690C3E6274431FA0027A389;
+			packageReferences = (
+				B689C52B2745F07200926741 /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = B690C3F0274431FB0027A389 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -446,6 +457,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6805A582746014B0020C48F /* BookingView.swift in Sources */,
 				B67E7365274475E400356649 /* User.swift in Sources */,
 				B690C3F5274431FB0027A389 /* ContentView.swift in Sources */,
 				B67E73682744823F00356649 /* ViewModels.swift in Sources */,
@@ -617,12 +629,14 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "RUGunarathna-COBSCComp201-019/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need camara to scan QR codes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchView;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -648,12 +662,14 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "RUGunarathna-COBSCComp201-019/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need camara to scan QR codes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchView;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -803,6 +819,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B689C52B2745F07200926741 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B689C52C2745F07200926741 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B689C52B2745F07200926741 /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B690C3E7274431FA0027A389 /* Project object */;
 }
