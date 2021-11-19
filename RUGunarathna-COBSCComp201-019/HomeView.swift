@@ -20,9 +20,14 @@ struct HomeView: View {
     @State var timerRunning4 = false
     @State var countDownTimer5 = 10
     @State var timerRunning5 = false
+    
+    @ObservedObject private var modelhome = ViewModels()
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
-    var body: some View {
+    var body: some View{
+        
+        NavigationView{
+        
        
         ZStack{
             
@@ -38,8 +43,17 @@ struct HomeView: View {
 //                .edgesIgnoringSafeArea(.all)
            
 
+            
+            
+            
+            
+            
+            
+            
+            
             VStack{
                 HStack{
+                    
                     Text("Home page")
                         .bold()
                         .foregroundColor(.black)
@@ -57,17 +71,56 @@ struct HomeView: View {
                     
                     HStack{
                         ZStack{
-                        Rectangle().fill(Color.orange).frame(width: 100, height: 100)
-                        
-                     
+                        Rectangle().fill(Color.orange).frame(width: 150, height: 150)
+                            
                             VStack{
                                 Text("1")
-                                    .font(.custom("Georgia", size: 40))
-                                //                        List(modelhome.user){ user in VStack{
-                                //                            //                        Text(user.name)
-                                //                        }
+                                    .font(.custom("Georgia", size: 30))
                                 
-                                //Timer
+                                ZStack{
+                                    List(modelhome.cparking){
+                                        item in
+                                        Text("car Number")
+                                        Text(item.carNumber1)
+//                                        List(modelhome.caparking){
+//                                            Text("carNumber1")
+//                                                                                Text(item.carNumber1)
+//                                                                                Text("slot1A")
+//                                                                                Text(item.slot1A)
+//                                        }
+                                        
+//                                        List (modelSetting.list){
+//                                            item in
+//                                            Text("Name")
+//                                            Text(item.name)
+//                                            Text("NIC")
+//                                            Text(item.nic)
+//                                            Text("Registration Number")
+//                                            Text(item.registrationN)
+//                                            Text("Vehicle Number")
+//                                            Text(item.vehicleN)
+//
+//                                    }
+//
+                                        
+                                        
+                                        
+                                        
+                                    }
+                                    .frame(width: 120, height: 50)
+                                }
+                                
+//                                
+//                                List(modelhome.cparking){
+//                                    item in
+//                                    Text("carNumber1")
+//                                    Text(item.carNumber1)
+//                                    Text("slot1A")
+//                                    Text(item.slot1A)
+//                                    
+//        //                        }
+//                            }
+                               
                                 
                                 Text("Timer \(countDownTimer1)")
                                     .onReceive(timer)
@@ -161,6 +214,11 @@ struct HomeView: View {
                                 //                        }
                                 
                                 //Timer
+                                
+                                
+                                
+                                
+                                
                                 
                                 Text("Timer \(countDownTimer3)")
                                     .onReceive(timer)
@@ -280,11 +338,13 @@ struct HomeView: View {
                         
                     }
                 }
+                
                    
             }
+            
         }
         
-            
+    
             
             
             
@@ -298,6 +358,7 @@ struct HomeView: View {
 //            }
        
     }
+}
 }
 
 struct HomeView_Previews: PreviewProvider {

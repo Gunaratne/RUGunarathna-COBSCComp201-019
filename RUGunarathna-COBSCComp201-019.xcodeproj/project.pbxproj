@@ -23,6 +23,7 @@
 		B690C40E274432010027A389 /* RUGunarathna_COBSCComp201_019UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B690C40D274432010027A389 /* RUGunarathna_COBSCComp201_019UITests.swift */; };
 		B690C410274432010027A389 /* RUGunarathna_COBSCComp201_019UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B690C40F274432010027A389 /* RUGunarathna_COBSCComp201_019UITestsLaunchTests.swift */; };
 		B690C41D274435130027A389 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B690C41C274435130027A389 /* GoogleService-Info.plist */; };
+		B6A131DF2746D027008FBCC8 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A131DE2746D027008FBCC8 /* Vehicle.swift */; };
 		B6E8EB96274450810005D255 /* SingUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E8EB95274450810005D255 /* SingUpView.swift */; };
 		B71766579A57F4CDEB4A50D9 /* Pods_RUGunarathna_COBSCComp201_019Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 766CC11CC016AC0655783B6D /* Pods_RUGunarathna_COBSCComp201_019Tests.framework */; };
 		D65C83571BA538A00E9860F6 /* Pods_RUGunarathna_COBSCComp201_019_RUGunarathna_COBSCComp201_019UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8140437A229D5359E6CAF6 /* Pods_RUGunarathna_COBSCComp201_019_RUGunarathna_COBSCComp201_019UITests.framework */; };
@@ -71,6 +72,7 @@
 		B690C40D274432010027A389 /* RUGunarathna_COBSCComp201_019UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RUGunarathna_COBSCComp201_019UITests.swift; sourceTree = "<group>"; };
 		B690C40F274432010027A389 /* RUGunarathna_COBSCComp201_019UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RUGunarathna_COBSCComp201_019UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B690C41C274435130027A389 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B6A131DE2746D027008FBCC8 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		B6E8EB95274450810005D255 /* SingUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpView.swift; sourceTree = "<group>"; };
 		E167FADAAE6E131637A3C001 /* Pods_RUGunarathna_COBSCComp201_019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RUGunarathna_COBSCComp201_019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F317D09184E250B25EF4D62C /* Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests.release.xcconfig"; path = "Target Support Files/Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests/Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				B67E7364274475E400356649 /* User.swift */,
+				B6A131DE2746D027008FBCC8 /* Vehicle.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -457,6 +460,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6A131DF2746D027008FBCC8 /* Vehicle.swift in Sources */,
 				B6805A582746014B0020C48F /* BookingView.swift in Sources */,
 				B67E7365274475E400356649 /* User.swift in Sources */,
 				B690C3F5274431FB0027A389 /* ContentView.swift in Sources */,

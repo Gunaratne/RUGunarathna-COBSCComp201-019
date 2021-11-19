@@ -8,15 +8,16 @@
 import Foundation
 
 struct User: Identifiable{
+    
+    //user
     var id: String
-    
-//    var id: ObjectIdentifier
-    
     var name: String
     var nic: String
-    var registration: String
+    var registrationN: String
     var vehicleN: String
     var email: String
     var password: String
+    
+  
     
 }
