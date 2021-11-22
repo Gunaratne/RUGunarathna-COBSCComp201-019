@@ -44,7 +44,7 @@ import FirebaseAuth
 
 
 struct ContentView: View {
-    @ObservedObject var modelsign = ViewModels()
+    @ObservedObject var viewModel = AuthenticateViewModel()
         @State var email = ""
         @State var password = ""
     
@@ -73,23 +73,21 @@ struct ContentView: View {
 
 
                     Button(action:{
-//                        NavigationLink(ac, destination: HomeView())
+
                             guard !email.isEmpty, !password.isEmpty else{
                                 return
                             }
-                        modelsign.signData(email: email, password: password)
-                        email = ""
-                        password = ""
+                        viewModel.SignIn(userEmail: email, userPassword: password)
+                      
 
-                    }, label: {NavigationLink(destination: HomeView()){
+                    }, label: {
                         Text("Sign In")
                             .foregroundColor(Color.white)
                                                         .frame(width: 200, height: 50)
                                                         .cornerRadius(8)
                                                         .background(Color.blue)
                     }                        
-                    })
-                   
+                    )
                     NavigationLink("Create Account",destination: SingUpView())
                     .padding()
 

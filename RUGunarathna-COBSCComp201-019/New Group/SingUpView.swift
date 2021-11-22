@@ -10,7 +10,7 @@ import FirebaseAuth
 import Firebase
 
 struct SingUpView: View {
-    @ObservedObject var model = ViewModels()
+    @ObservedObject var viewModel = AuthenticateViewModel()
     @State var email = ""
     @State var password = ""
     @State var name = ""
@@ -65,7 +65,7 @@ struct SingUpView: View {
                         guard !email.isEmpty, !password.isEmpty else{
                             return
                         }
-                        model.addData(name: name, nic: nic, registerationN: registrationN, vehicleN: vehicleN, password: password, email: email)
+                        viewModel.SignUp(name: name, nic: nic, registerationN: registrationN, vehicleN: vehicleN, password: password, email: email)
                         name = ""
                         nic = ""
                          registrationN = ""

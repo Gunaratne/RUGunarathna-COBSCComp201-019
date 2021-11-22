@@ -8,7 +8,7 @@
 import Foundation
 
 struct User: Identifiable{
-    
+
     //user
     var id: String
     var name: String
@@ -21,3 +21,15 @@ struct User: Identifiable{
   
     
 }
+
+
+class UserInfol : ObservableObject{
+    @Published var email = ""
+    @Published var password = ""
+    @Published var vehicleN = ""
+    @Published var registrationN = ""
+    @Published var nic = ""
+    @Published var name = ""
+    @Published var id = ""
+}
+

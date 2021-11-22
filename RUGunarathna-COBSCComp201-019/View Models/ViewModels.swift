@@ -16,34 +16,7 @@ class ViewModels: ObservableObject{
     
     
     
-    func getData(){
-        let db = Firestore.firestore()
-        db.collection("User").getDocuments{
-            snapshort, erro in
-            if erro == nil{
-                if let snapshort = snapshort{
-                
-                    DispatchQueue.main.async {
-                        self.list = snapshort.documents.map{
-                            d in
-                            return User(id: d.documentID, name: d["name"] as? String ?? "",
-                                        nic: d["nic"] as? String ?? "",
-                                        registrationN: d["registrationN"] as? String ?? "",
-                                        vehicleN: d["vehicleN"] as? String ?? "",
-                                        email: d["email"] as? String ?? "",
-                                        password: d["password"] as? String ?? "")
-                        }
-                    }
-                    
-                }
-            }
-            else{
-                
-            }
-        }
-    }
-    
-    
+    //Sign View
     func addData(name: String, nic: String, registerationN: String, vehicleN: String, password: String, email: String){
         let db = Firestore.firestore()
         db.collection("User").addDocument(data: ["name" : name, "nic":nic, "registerationN": registerationN, "vehicleN": vehicleN, "email": email, "password":password ]){
@@ -57,6 +30,7 @@ class ViewModels: ObservableObject{
             
         }
     }
+    //Login View
     func signData(email: String, password: String){
 
 
