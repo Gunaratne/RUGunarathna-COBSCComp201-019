@@ -44,8 +44,8 @@ import FirebaseAuth
 
 
 struct ContentView: View {
-    @ObservedObject var viewModel = AuthenticateViewModel()
-        @State var email = ""
+    @EnvironmentObject var authViewModel : AuthenticateViewModel
+    @State var email = ""
         @State var password = ""
     
 //        @EnvironmentObject var viewModel: AppViewModel
@@ -77,7 +77,7 @@ struct ContentView: View {
                             guard !email.isEmpty, !password.isEmpty else{
                                 return
                             }
-                        viewModel.SignIn(userEmail: email, userPassword: password)
+                        authViewModel.SignIn(userEmail: email, userPassword: password)
                       
 
                     }, label: {
@@ -97,9 +97,7 @@ struct ContentView: View {
         }
             .navigationTitle("Sign In")
 }
-//        .onAppear{
-//            viewModel.signedIn = viewModel.isSignIn
-//        }
+
     }
     
 }

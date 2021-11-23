@@ -12,7 +12,7 @@ import FirebaseAuth
 class ViewModels: ObservableObject{
     @Published var list = [User]()
     
-    @Published var cparking = [Vehicle]()
+    @Published var cparking = [ParkingSlot]()
     
     
     
@@ -78,34 +78,34 @@ class ViewModels: ObservableObject{
 //            }
 //        }
 //    }
-        let db = Firestore.firestore()
-        db.collection("Vehicle").getDocuments{
-            snapshort, erro in
-            if erro == nil{
-                if let snapshort = snapshort{
-                    DispatchQueue.main.async {
-                        self.cparking = snapshort.documents.map{
-                            d in
-                            return Vehicle(id: d.documentID, carNumber1: d["carNumber1"] as? String ?? "",
-                                           carNumber2: d["slot1A"] as? String ?? "",
-                                           carNumber3: d["carNumber2"] as? String ?? "",
-                                           carNumber4: d["sloat2A"] as? String ?? "",
-                                           carNumber5: d["carNumber3"] as? String ?? "",
-                                           slot1A: d["sloat3A"] as? String ?? "",
-                                           slot2A: d["carNumber4"] as? String ?? "",
-                                           slot3A: d["sloat4A"] as? String ?? "",
-                                           slot4A: d["carNumber5"] as? String ?? "",
-                                           slot5A: d["sloat5A"] as? String ?? "")
-                        }
-                    }
-                    
-                }
-            }
-            else{
-                
-            }
-        }
-    
-    
+//        let db = Firestore.firestore()
+//        db.collection("Vehicle").getDocuments{
+//            snapshort, erro in
+//            if erro == nil{
+//                if let snapshort = snapshort{
+//                    DispatchQueue.main.async {
+//                        self.cparking = snapshort.documents.map{
+//                            d in
+//                            return ParkingSlot(id: d.documentID, carNumber1: d["carNumber1"] as? String ?? "",
+//                                           carNumber2: d["slot1A"] as? String ?? "",
+//                                           carNumber3: d["carNumber2"] as? String ?? "",
+//                                           carNumber4: d["sloat2A"] as? String ?? "",
+//                                           carNumber5: d["carNumber3"] as? String ?? "",
+//                                           slot1A: d["sloat3A"] as? String ?? "",
+//                                           slot2A: d["carNumber4"] as? String ?? "",
+//                                           slot3A: d["sloat4A"] as? String ?? "",
+//                                           slot4A: d["carNumber5"] as? String ?? "",
+//                                           slot5A: d["sloat5A"] as? String ?? "")
+//                        }
+//                    }
+//                    
+//                }
+//            }
+//            else{
+//                
+//            }
+//        }
+//    
+//    
 }
 }

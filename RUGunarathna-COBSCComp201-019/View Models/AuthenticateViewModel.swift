@@ -66,13 +66,13 @@ class AuthenticateViewModel : ObservableObject{
                     if let user = user {
                         
                         let object :[String: Any] = [
-                            "UserID" : user.uid,
-                            "Name" : name,
-                            "NIC" : nic,
-                            "RegistationNo": registerationN,
-                            "VehicleNo" : vehicleN ]
+                            "authID" : user.uid,
+                            "name" : name,
+                            "nic" : nic,
+                            "registationN": registerationN,
+                            "vehicleN" : vehicleN ]
                         var ref: DocumentReference? = nil
-                        ref = self.db.collection("User").addDocument(data: ["name" : name, "nic":nic, "registerationN": registerationN, "vehicleN": vehicleN, "email": email, "password":password ]){ err in
+                        ref = self.db.collection("User").addDocument(data:object){ err in
                             if let err = err {
                                 print("Error writing document: \(err)")
                             } else {

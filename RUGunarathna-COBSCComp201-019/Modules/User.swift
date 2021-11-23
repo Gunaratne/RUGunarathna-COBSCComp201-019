@@ -11,15 +11,11 @@ struct User: Identifiable{
 
     //user
     var id: String
+    var authID: String
     var name: String
     var nic: String
     var registrationN: String
     var vehicleN: String
-    var email: String
-    var password: String
-    
-  
-    
 }
 
 

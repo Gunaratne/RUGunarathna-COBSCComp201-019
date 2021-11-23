@@ -7,12 +7,15 @@
 
 import SwiftUI
 
+
 struct BookScreen: View {
+    @StateObject var bookingViewModel = BookingViewModel()
+    @StateObject var bookingModel = BookingSlot()
     var body: some View {
         NavigationView{
             VStack{
                 Form{
-//                    if let user = bookingViewModel.member.first{
+                    if let user = bookingViewModel.user.first{
                         Section(
                            // header: Text("Booking Information")
                         ){
@@ -20,7 +23,7 @@ struct BookScreen: View {
                                 Text("Registration Number") .fontWeight(.regular)
                                     .foregroundColor(.black)
                                 Spacer(minLength: 10)
-//                                Text(user.id)
+                                Text(user.registrationN)
 //                                    .foregroundColor(.gray)
 //                                    .fontWeight(.semibold)
                             }
@@ -28,20 +31,22 @@ struct BookScreen: View {
                                 Text("Vehicle Number") .fontWeight(.regular)
                                     .foregroundColor(.black)
                                 Spacer(minLength: 10)
-//                                Text(user.vehicleNo)
+                                Text(user.vehicleN)
 //                                    .foregroundColor(.gray)
 //                                    .fontWeight(.semibold)
                             }
                         }
                         Section(){
-//                            VStack(alignment: .leading){
-//                                Picker("Select A Parking Lot", selection: $bookingModel.selectedParkingLot){
-//                                    ForEach(bookingViewModel.avaliableParkingLots){ParkingLotsForPicker in
-//                                        Text(ParkingLotsForPicker.parkingLotCode + " (" + ParkingLotsForPicker.parkingLotType + ")")
-//                                    }
-//                                }
-//                            }
+                            VStack(alignment: .leading){
+                                Picker("Select A Parking Lot", selection: $bookingModel.selectedSlot){
+                                    ForEach(bookingViewModel.avaliableParkingLots){ParkingSlot in
+                                        Text(ParkingSlot.parkingSlot + " (" + ParkingSlot.parkingType + ")")
+                                    }
+                                    .pickerStyle(WheelPickerStyle())
+                                }
+                            }
                         }
+                    
                    // }
                     Section{
                         HStack{
@@ -56,13 +61,13 @@ struct BookScreen: View {
                                                                 .cornerRadius(8)
                                                                 .background(Color.blue)
                             })
-//                            Button(action: { bookingViewModel.Reservation(bookingInfo: bookingModel, memberID: $bookingViewModel.member.first?.id ?? ""
-//                            )},
-//                                   label: {
-//                                Text("Reserved")
-//                                    .foregroundColor(Color.blue)
-//                                    .fontWeight(.semibold)
-//                            })
+                            Button(action: { bookingViewModel.Reservation(bookingInfo: bookingModel, authID: $bookingViewModel.user.first?.id ?? ""
+                            )},
+                                   label: {
+                                Text("Reserved")
+                                    .foregroundColor(Color.blue)
+                                    .fontWeight(.semibold)
+                            })
                             Spacer()
                         }
                     }
@@ -94,11 +99,12 @@ struct BookScreen: View {
                 }
             }
             .navigationTitle("Booking")
-//            .onAppear(){
-//                self.bookingViewModel.GetUserDeatils()
-//                self.bookingViewModel.GetAvailableParkingLots()
-//            }
+            .onAppear(){
+                self.bookingViewModel.GetUserDeatils()
+                self.bookingViewModel.GetAvaliable()
+            }
         }
+    }
     }
 }
 
