@@ -11,18 +11,18 @@ struct BookingScreen: View {
     @StateObject var bookingViewModel = BookingViewModel()
     @StateObject var bookingModel = BookingSlot()
     @State var isPerentingScanner = false
+    @State var scannerCode: String = "Scan a QR code to get started"
     
     
     var scannerSheet: some View{
-        CodeScannerView(codeTypes: [.qr], completion: {
-            result in
-            if case let .success(code) = result{
-                self.bookingModel.selectedSlot = code
-                self.isPerentingScanner = false
-                bookingViewModel.Reservation(bookingInfo: bookingModel, authID: $bookingViewModel.user.first?.id ?? "")
-            }
-        })
-    }
+          CodeScannerView(codeTypes: [.qr], completion: {
+              result in
+              if case let .success(code) = result{
+                  self.scannerCode = code
+                  self.isPerentingScanner = false
+              }
+          })
+      }
   
     
     var body: some View {
@@ -74,23 +74,28 @@ struct BookingScreen: View {
                         }
                     }
                     
-                    Section{
+                 //   Section{
                         
-                        HStack{
-                            Spacer()
-                            Button(action: {self.isPerentingScanner = true}, label: {
-                                Text("Scan QR Code")
-                                    .foregroundColor(Color.green)
-                                    .fontWeight(.semibold)
-                            })
+                        VStack{
+                            Text(scannerCode)
+                            Button("Scan QR code"){
+                                           self.isPerentingScanner = true
+                                   }
+                                       .sheet(isPresented: $isPerentingScanner)
+                                       {
+                                           self.scannerSheet
+                                       }
+                          
 //                                .sheet(isPresented:$is isPerentingScanner)
 //                                .alert(isPresented: $bookingViewModel.isAlertPresent) {
 //                                    Alert(title: Text(bookingViewModel.alertTitle), message: Text(bookingViewModel.alert))
 //                                }
                             Spacer()
                         }
-                    }
+                   // }
                 }
+                
+                           
             }
             .navigationTitle("Booking")
             .onAppear(){
