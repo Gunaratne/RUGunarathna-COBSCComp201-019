@@ -18,7 +18,7 @@ struct TabContentView: View {
                 }
             
             if authViewModel.signedIn{
-                BookScreen()
+                BookingScreen()
                     .onAppear{
                         authViewModel.signedIn = authViewModel.isSignedIn
                     }

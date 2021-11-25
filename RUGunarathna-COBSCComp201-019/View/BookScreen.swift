@@ -2,17 +2,15 @@
 //  BookScreen.swift
 //  RUGunarathna-COBSCComp201-019
 //
-//  Created by Ravindee on 2021-11-20.
+//  Created by Ravindee on 2021-11-17.
 //
-
 import SwiftUI
 import CodeScanner
 
-struct BookScreen: View {
+struct BookingScreen: View {
     @StateObject var bookingViewModel = BookingViewModel()
     @StateObject var bookingModel = BookingSlot()
     @State var isPerentingScanner = false
-    @State private var isExpandaed = false
     
     
     var scannerSheet: some View{
@@ -25,108 +23,72 @@ struct BookScreen: View {
             }
         })
     }
+  
+    
     var body: some View {
         NavigationView{
             VStack{
                 Form{
+                    
                     if let user = bookingViewModel.user.first{
-                        Section(
-                           // header: Text("Booking Information")
-                        ){
+                        Section(header: Text("Booking Information")){
                             VStack(alignment: .leading){
                                 Text("Registration Number") .fontWeight(.regular)
                                     .foregroundColor(.black)
                                 Spacer(minLength: 10)
-                                Text(user.registrationN)
-//                                    .foregroundColor(.gray)
-//                                    .fontWeight(.semibold)
+                                Text(user.id)
+                                    .foregroundColor(.gray)
+                                    .fontWeight(.semibold)
                             }
                             VStack(alignment: .leading){
                                 Text("Vehicle Number") .fontWeight(.regular)
                                     .foregroundColor(.black)
                                 Spacer(minLength: 10)
                                 Text(user.vehicleN)
-//                                    .foregroundColor(.gray)
-//                                    .fontWeight(.semibold)
+                                    .foregroundColor(.gray)
+                                    .fontWeight(.semibold)
                             }
                         }
                         Section(){
                             VStack(alignment: .leading){
-//                                DisclosureGroup("Title", isExpanded: $isExpandaed){
-//                                    VStack{
-//                                        ForEach(bookingViewModel.avaliableParkingLots){ParkingSlot in
-//                                            Text(ParkingSlot.parkingSlot + " (" + ParkingSlot.parkingType + ")" )                                }
-//                                    }
-//                                }
-//
-                                
                                 Picker("Select A Parking Lot", selection: $bookingModel.selectedSlot){
                                     ForEach(bookingViewModel.avaliableParkingLots){ParkingSlot in
-                                        Text(
-                                            ParkingSlot.vehicleN +
-                                           
-
-                                            ParkingSlot.parkingSlot
-                                             + " (" + ParkingSlot.parkingType + ")"
-//                                            +
-//                                            "(" + ParkingSlot.status + ")"
-                                        
-                                        )
+                                        Text(ParkingSlot.parkingSlot)
                                     }
-                                    .pickerStyle(WheelPickerStyle())
                                 }
                             }
                         }
-                    
-                   // }
+                    }
                     Section{
                         HStack{
                             Spacer()
-                            Button(action:{
-                                
-                               
-                            },label:{
-                                Text("Booked")
-                                    .foregroundColor(Color.white)
-                                                                .frame(width: 200, height: 50)
-                                                                .cornerRadius(8)
-                                                                .background(Color.blue)
-                            })
-                            Button(action: { bookingViewModel.Reservation(bookingInfo: bookingModel, authID: $bookingViewModel.user.first?.id ?? ""
-                            )},
-                                   label: {
+//                            Button(action: { bookingViewModel.Reservation(bookingInfo: bookingModel, memberID: $bookingViewModel.member.first?.id ?? "")}, label: {
 //                                Text("Reserved")
 //                                    .foregroundColor(Color.blue)
 //                                    .fontWeight(.semibold)
-                            })
+//                            })
+//                                .alert(isPresented: $bookingViewModel.isAlertPresent) {
+//                                    Alert(title: Text(bookingViewModel.alertTitle), message: Text(bookingViewModel.alert))
+//                                }
                             Spacer()
                         }
                     }
-                   // Section{
+                    
+                    Section{
+                        
                         HStack{
                             Spacer()
-//                            Button(action:{
-//                                
-//                               
-//                            },label:{
-//                                Text("Scan QR code")
-//                                    .foregroundColor(Color.white)
-//                                                                .frame(width: 200, height: 50)
-//                                                                .cornerRadius(8)
-//                                                                .background(Color.blue)
-//                            })
                             Button(action: {self.isPerentingScanner = true}, label: {
                                 Text("Scan QR Code")
                                     .foregroundColor(Color.green)
                                     .fontWeight(.semibold)
                             })
-                            
-                                .sheet(isPresented: $isPerentingScanner){
-                                    self.scannerSheet
-                                }
+//                                .alert(isPresented: $bookingViewModel.isAlertPresent) {
+//                                    Alert(title: Text(bookingViewModel.alertTitle), message: Text(bookingViewModel.alert))
+//                                }
                             Spacer()
                         }
-                    //}
+                    }
                 }
             }
             .navigationTitle("Booking")
@@ -136,11 +98,10 @@ struct BookScreen: View {
             }
         }
     }
-    }
 }
 
-struct BookScreen_Previews: PreviewProvider {
+struct BookingScreen_Previews: PreviewProvider {
     static var previews: some View {
-        BookScreen()
+        BookingScreen()
     }
 }
