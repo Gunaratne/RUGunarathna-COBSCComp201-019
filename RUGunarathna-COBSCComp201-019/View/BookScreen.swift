@@ -83,6 +83,7 @@ struct BookingScreen: View {
                                     .foregroundColor(Color.green)
                                     .fontWeight(.semibold)
                             })
+//                                .sheet(isPresented:$is isPerentingScanner)
 //                                .alert(isPresented: $bookingViewModel.isAlertPresent) {
 //                                    Alert(title: Text(bookingViewModel.alertTitle), message: Text(bookingViewModel.alert))
 //                                }
