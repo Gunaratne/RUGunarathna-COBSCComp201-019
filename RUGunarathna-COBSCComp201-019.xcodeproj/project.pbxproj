@@ -10,9 +10,7 @@
 		743E70C32C57CABADE3F741C /* Pods_RUGunarathna_COBSCComp201_019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E167FADAAE6E131637A3C001 /* Pods_RUGunarathna_COBSCComp201_019.framework */; };
 		B67E7365274475E400356649 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67E7364274475E400356649 /* User.swift */; };
 		B67E73682744823F00356649 /* ViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67E73672744823F00356649 /* ViewModels.swift */; };
-		B67FEBD52744EA7B0089BDEF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67FEBD42744EA7B0089BDEF /* HomeView.swift */; };
 		B67FEBD727452BFF0089BDEF /* LaunchView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B67FEBD627452BFF0089BDEF /* LaunchView.storyboard */; };
-		B6805A582746014B0020C48F /* BookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6805A572746014B0020C48F /* BookingView.swift */; };
 		B681EF7C274552A100F3AA7C /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B681EF7B274552A100F3AA7C /* SettingView.swift */; };
 		B689C52D2745F07200926741 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = B689C52C2745F07200926741 /* CodeScanner */; };
 		B690C3F3274431FB0027A389 /* RUGunarathna_COBSCComp201_019App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B690C3F2274431FB0027A389 /* RUGunarathna_COBSCComp201_019App.swift */; };
@@ -74,10 +72,8 @@
 		B535D9E2569B9D84E2EDB715 /* Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests.debug.xcconfig"; path = "Target Support Files/Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests/Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B67E7364274475E400356649 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B67E73672744823F00356649 /* ViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModels.swift; sourceTree = "<group>"; };
-		B67FEBD42744EA7B0089BDEF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B67FEBD627452BFF0089BDEF /* LaunchView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchView.storyboard; sourceTree = "<group>"; };
 		B67FEBD8274531310089BDEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		B6805A572746014B0020C48F /* BookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingView.swift; sourceTree = "<group>"; };
 		B681EF7B274552A100F3AA7C /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		B690C3EF274431FB0027A389 /* RUGunarathna-COBSCComp201-019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RUGunarathna-COBSCComp201-019.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B690C3F2274431FB0027A389 /* RUGunarathna_COBSCComp201_019App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RUGunarathna_COBSCComp201_019App.swift; sourceTree = "<group>"; };
@@ -262,9 +258,7 @@
 				B6B00EF02749902700C4AA72 /* BookScreen.swift */,
 				B693CBA7274BF6E1006FE556 /* HomeScreen.swift */,
 				B690C3F4274431FB0027A389 /* ContentView.swift */,
-				B6805A572746014B0020C48F /* BookingView.swift */,
 				B681EF7B274552A100F3AA7C /* SettingView.swift */,
-				B67FEBD42744EA7B0089BDEF /* HomeView.swift */,
 				B6936279274C035F00B7F9E2 /* TabContentView.swift */,
 			);
 			path = View;
@@ -566,14 +560,12 @@
 				B693CBAD274BF9DB006FE556 /* AuthenticateViewModel.swift in Sources */,
 				B691CB36274D8143004AE25C /* BookingViewModel.swift in Sources */,
 				B6A131DF2746D027008FBCC8 /* ParkingSlot.swift in Sources */,
-				B6805A582746014B0020C48F /* BookingView.swift in Sources */,
 				B69D6BE7274D583300946490 /* HomeViewModel.swift in Sources */,
 				B67E7365274475E400356649 /* User.swift in Sources */,
 				B690C3F5274431FB0027A389 /* ContentView.swift in Sources */,
 				B67E73682744823F00356649 /* ViewModels.swift in Sources */,
 				B681EF7C274552A100F3AA7C /* SettingView.swift in Sources */,
 				B6B00EF12749902700C4AA72 /* BookScreen.swift in Sources */,
-				B67FEBD52744EA7B0089BDEF /* HomeView.swift in Sources */,
 				B693CBA8274BF6E1006FE556 /* HomeScreen.swift in Sources */,
 				B693627A274C035F00B7F9E2 /* TabContentView.swift in Sources */,
 				B6A230A5274B72DF0020A58C /* SettingModels.swift in Sources */,

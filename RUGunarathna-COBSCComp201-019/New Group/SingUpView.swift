@@ -72,9 +72,7 @@ struct SingUpView: View {
                         vehicleN  = ""
                         password  = ""
                         email = ""
-//                        NavigationLink(destination: BookingView()){
-//
-//                        }
+
                         
                     },label:{
                         Text("Sign Up")

@@ -40,7 +40,6 @@ class BookingViewModel : ObservableObject{
     }
     
     func GetAvaliable(){
-//        let vehicleN = firebaseAuth.currentUser?.uid
         
         db.collection("ParkingSlots").whereField("status", isEqualTo: "0").addSnapshotListener { (querySnapshot, error) in
             guard let documents = querySnapshot?.documents else {
@@ -56,7 +55,6 @@ class BookingViewModel : ObservableObject{
                 let parkingType = data["parkingType"] as? String ?? ""
                 let status = data["status"] as? String ?? ""
                 print(data)
-//                return ParkingSlot(id: id, parkingSlot: parkingSlot, parkingType: parkingType, vehicleN: vehicleN, status: status)
                 return ParkingSlot(id: id, vehicleN: vehicleN, parkingSlot: parkingSlot, parkingType: parkingType, status: status)
                
       
@@ -92,20 +90,7 @@ class BookingViewModel : ObservableObject{
         }
     }
     
-//    func BookingDate() -> String {
-//        let dateFormater = DateFormatter()
-//        dateFormater.dateFormat = "yyyy-MM-dd"
-//        let date = dateFormater.string(from: Date() as Date)
-//        return date
-//    }
-//    
-//    func BookingTime() -> String {
-//        let timeFormater = DateFormatter()
-//        timeFormater.dateFormat = "HH:mm"
-//        let time = timeFormater.string(from: Date() as Date)
-//        return time
-//    }
-//    
+    
     func BookingCanceledTime() -> String {
         let timeFormater = DateFormatter()
         timeFormater.dateFormat = "HH:mm"

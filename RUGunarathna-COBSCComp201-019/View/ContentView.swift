@@ -13,8 +13,6 @@ struct ContentView: View {
     @State var email = ""
         @State var password = ""
     
-    
-//        @EnvironmentObject var viewModel: AppViewModel
     var body: some View {
         NavigationView{
 
@@ -65,8 +63,6 @@ struct ContentView: View {
                 Spacer()
         }
             .navigationTitle("Sign In")
-            
-           
 }
 
     }
@@ -79,13 +75,4 @@ struct ContentView_Previews: PreviewProvider {
             .preferredColorScheme(.dark)
     }
 }
-//struct EntryFiel: View{
-//    var prompt: String
-//    var body:some View{
-//        Text(prompt)
-//            .fixedSize(horizontal: false, vertical: false)
-//            .font(.caption)
-//    }
-//    
-//    
-//}
+

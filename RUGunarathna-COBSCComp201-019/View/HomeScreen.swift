@@ -106,7 +106,6 @@ struct ParkingLotsGridView : View {
                 .font(.custom("Georgia",
                               size: 20))
                 .foregroundColor(.black)
-//                                .padding(.all, 10)
                 .background(Color.white.opacity(0.5))
                 .cornerRadius(20)
                 Spacer()
