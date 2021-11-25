@@ -8,45 +8,11 @@
 import SwiftUI
 import FirebaseAuth
 
-//class AppViewModel: ObservableObject{
-//    let auth = Auth.auth()
-//    
-//    @Published var signedIn = false
-//    var isSignIn: Bool{
-//        return auth.currentUser != nil
-//    }
-//    
-//    func signIn(email: String, password: String){
-//        auth.signIn(withEmail: email,
-//                    password: password){[weak self]
-//            result, error in guard result != nil, error == nil else{
-//                return
-//            }
-//            //Sucess
-//            DispatchQueue.main.async {
-//                self?.signedIn = true
-//            }
-//        }
-//       
-//    }
-//    func signUp(email: String, password: String){
-//        auth.createUser(withEmail: email, password: password){[weak self]
-//            result, error in guard result != nil, error == nil else{
-//                return
-//            }
-//            //Success
-//            DispatchQueue.main.async {
-//                self?.signedIn = true
-//            }
-//        }
-//    }
-//}
-
-
 struct ContentView: View {
     @EnvironmentObject var authViewModel : AuthenticateViewModel
     @State var email = ""
         @State var password = ""
+    
     
 //        @EnvironmentObject var viewModel: AppViewModel
     var body: some View {
@@ -86,16 +52,21 @@ struct ContentView: View {
                                                         .frame(width: 200, height: 50)
                                                         .cornerRadius(8)
                                                         .background(Color.blue)
-                    }                        
+                    }
+                            
                     )
+                    
                     NavigationLink("Create Account",destination: SingUpView())
                     .padding()
 
                 }
+                
                 .padding()
                 Spacer()
         }
             .navigationTitle("Sign In")
+            
+           
 }
 
     }
@@ -108,3 +79,13 @@ struct ContentView_Previews: PreviewProvider {
             .preferredColorScheme(.dark)
     }
 }
+//struct EntryFiel: View{
+//    var prompt: String
+//    var body:some View{
+//        Text(prompt)
+//            .fixedSize(horizontal: false, vertical: false)
+//            .font(.caption)
+//    }
+//    
+//    
+//}

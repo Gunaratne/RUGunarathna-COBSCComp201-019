@@ -40,6 +40,7 @@ class BookingViewModel : ObservableObject{
     }
     
     func GetAvaliable(){
+//        let vehicleN = firebaseAuth.currentUser?.uid
         
         db.collection("ParkingSlots").whereField("status", isEqualTo: "0").addSnapshotListener { (querySnapshot, error) in
             guard let documents = querySnapshot?.documents else {
@@ -55,8 +56,9 @@ class BookingViewModel : ObservableObject{
                 let parkingType = data["parkingType"] as? String ?? ""
                 let status = data["status"] as? String ?? ""
                 print(data)
+//                return ParkingSlot(id: id, parkingSlot: parkingSlot, parkingType: parkingType, vehicleN: vehicleN, status: status)
                 return ParkingSlot(id: id, vehicleN: vehicleN, parkingSlot: parkingSlot, parkingType: parkingType, status: status)
-                print(data)
+      
             }
             
         }

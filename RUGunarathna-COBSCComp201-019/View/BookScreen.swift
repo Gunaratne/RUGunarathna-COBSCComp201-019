@@ -6,11 +6,25 @@
 //
 
 import SwiftUI
-
+import CodeScanner
 
 struct BookScreen: View {
     @StateObject var bookingViewModel = BookingViewModel()
     @StateObject var bookingModel = BookingSlot()
+    @State var isPerentingScanner = false
+    @State private var isExpandaed = false
+    
+    
+    var scannerSheet: some View{
+        CodeScannerView(codeTypes: [.qr], completion: {
+            result in
+            if case let .success(code) = result{
+                self.bookingModel.selectedSlot = code
+                self.isPerentingScanner = false
+                bookingViewModel.Reservation(bookingInfo: bookingModel, authID: $bookingViewModel.user.first?.id ?? "")
+            }
+        })
+    }
     var body: some View {
         NavigationView{
             VStack{
@@ -38,9 +52,19 @@ struct BookScreen: View {
                         }
                         Section(){
                             VStack(alignment: .leading){
+//                                DisclosureGroup("Title", isExpanded: $isExpandaed){
+//                                    VStack{
+//                                        ForEach(bookingViewModel.avaliableParkingLots){ParkingSlot in
+//                                            Text(ParkingSlot.parkingSlot + " (" + ParkingSlot.parkingType + ")" )                                }
+//                                    }
+//                                }
+//
+                                
                                 Picker("Select A Parking Lot", selection: $bookingModel.selectedSlot){
                                     ForEach(bookingViewModel.avaliableParkingLots){ParkingSlot in
-                                        Text(ParkingSlot.parkingSlot + " (" + ParkingSlot.parkingType + ")")
+                                        Text(ParkingSlot.parkingSlot
+                                             + " (" + ParkingSlot.parkingType + ")"
+                                        )
                                     }
                                     .pickerStyle(WheelPickerStyle())
                                 }
@@ -64,9 +88,9 @@ struct BookScreen: View {
                             Button(action: { bookingViewModel.Reservation(bookingInfo: bookingModel, authID: $bookingViewModel.user.first?.id ?? ""
                             )},
                                    label: {
-                                Text("Reserved")
-                                    .foregroundColor(Color.blue)
-                                    .fontWeight(.semibold)
+//                                Text("Reserved")
+//                                    .foregroundColor(Color.blue)
+//                                    .fontWeight(.semibold)
                             })
                             Spacer()
                         }
@@ -74,25 +98,25 @@ struct BookScreen: View {
                    // Section{
                         HStack{
                             Spacer()
-                            Button(action:{
-                                
-                               
-                            },label:{
-                                Text("Scan QR code")
-                                    .foregroundColor(Color.white)
-                                                                .frame(width: 200, height: 50)
-                                                                .cornerRadius(8)
-                                                                .background(Color.blue)
-                            })
-//                            Button(action: {self.isPerentingScanner = true}, label: {
-//                                Text("Scan QR Code")
-//                                    .foregroundColor(Color.green)
-//                                    .fontWeight(.semibold)
+//                            Button(action:{
+//                                
+//                               
+//                            },label:{
+//                                Text("Scan QR code")
+//                                    .foregroundColor(Color.white)
+//                                                                .frame(width: 200, height: 50)
+//                                                                .cornerRadius(8)
+//                                                                .background(Color.blue)
 //                            })
+                            Button(action: {self.isPerentingScanner = true}, label: {
+                                Text("Scan QR Code")
+                                    .foregroundColor(Color.green)
+                                    .fontWeight(.semibold)
+                            })
                             
-//                                .sheet(isPresented: $isPerentingScanner){
-//                                    self.scannerSheet
-//                                }
+                                .sheet(isPresented: $isPerentingScanner){
+                                    self.scannerSheet
+                                }
                             Spacer()
                         }
                     //}

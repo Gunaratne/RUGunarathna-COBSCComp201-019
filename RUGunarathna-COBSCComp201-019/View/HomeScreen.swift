@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeScreen: View {
     @State var index = 0
     @StateObject var homeViewModel = HomeViewModel()
+
     var body: some View {
         NavigationView{
             VStack{
@@ -76,6 +77,8 @@ struct ParkingLotsGridView : View {
     var columns = Array(repeating: GridItem(.flexible(), spacing:20), count: 2)
     @State private var timeRemaing = 100;
     @State private var isActive = true;
+    @State var countDownTimer1 = 10
+    @State var timerRunning1 = false
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     func ConvertToTimeFormat(timeRemaing : Int) -> String{
@@ -87,6 +90,29 @@ struct ParkingLotsGridView : View {
     var body: some View{
         ScrollView{
             LazyVGrid(columns: columns, spacing: 30){
+                Spacer()
+                
+                Text("Timer \(countDownTimer1)")
+                    .onReceive(timer)
+                { _ in
+                    if countDownTimer1 > 0 && timerRunning1{
+                        countDownTimer1 -= 1
+                    }
+                    else{
+                        timerRunning1 = false
+                        countDownTimer1 = 10
+                    }
+                }
+                .font(.custom("Georgia",
+                              size: 20))
+                .foregroundColor(.black)
+//                                .padding(.all, 10)
+                .background(Color.white.opacity(0.5))
+                .cornerRadius(20)
+                Spacer()
+                
+                
+                
                 ForEach(Data){ParkingSlot in
                     ZStack(alignment: Alignment(horizontal: .trailing, vertical: .top)){
                         VStack(alignment: .leading, spacing: 20){
