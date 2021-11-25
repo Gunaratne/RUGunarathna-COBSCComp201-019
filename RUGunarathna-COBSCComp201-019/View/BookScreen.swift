@@ -62,8 +62,15 @@ struct BookScreen: View {
                                 
                                 Picker("Select A Parking Lot", selection: $bookingModel.selectedSlot){
                                     ForEach(bookingViewModel.avaliableParkingLots){ParkingSlot in
-                                        Text(ParkingSlot.parkingSlot
+                                        Text(
+                                            ParkingSlot.vehicleN +
+                                           
+
+                                            ParkingSlot.parkingSlot
                                              + " (" + ParkingSlot.parkingType + ")"
+//                                            +
+//                                            "(" + ParkingSlot.status + ")"
+                                        
                                         )
                                     }
                                     .pickerStyle(WheelPickerStyle())

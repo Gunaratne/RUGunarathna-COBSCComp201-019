@@ -58,8 +58,10 @@ class BookingViewModel : ObservableObject{
                 print(data)
 //                return ParkingSlot(id: id, parkingSlot: parkingSlot, parkingType: parkingType, vehicleN: vehicleN, status: status)
                 return ParkingSlot(id: id, vehicleN: vehicleN, parkingSlot: parkingSlot, parkingType: parkingType, status: status)
+               
       
             }
+            
             
         }
      
@@ -78,7 +80,7 @@ class BookingViewModel : ObservableObject{
                 print("Error writing document: \(err)")
             } else {
                 print("Reservation Document successfully written!")
-                self.db.collection("ParkingLots").document(bookingInfo.selectedSlot).updateData(["Status" : "Reserved", "VehicleN": self.user.first?.vehicleN ?? "", "ResevationCanceledTime": self.BookingCanceledTime()]){ err in
+                self.db.collection("ParkingLots").document(bookingInfo.selectedSlot).updateData(["Status" : "Booked", "VehicleN": self.user.first?.vehicleN ?? "", "ResevationCanceledTime": self.BookingCanceledTime()]){ err in
                     if let err = err {
                         print("Error writing document: \(err)")
                     } else {

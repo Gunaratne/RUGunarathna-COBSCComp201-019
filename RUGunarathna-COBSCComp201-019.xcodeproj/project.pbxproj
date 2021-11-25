@@ -33,6 +33,8 @@
 		B6A131DF2746D027008FBCC8 /* ParkingSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A131DE2746D027008FBCC8 /* ParkingSlot.swift */; };
 		B6A230A5274B72DF0020A58C /* SettingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A230A4274B72DF0020A58C /* SettingModels.swift */; };
 		B6B00EF12749902700C4AA72 /* BookScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B00EF02749902700C4AA72 /* BookScreen.swift */; };
+		B6BFED31274FDC6200805399 /* RUGunarathna_COBSCComp201_019UITestsLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BFED30274FDC6200805399 /* RUGunarathna_COBSCComp201_019UITestsLogin.swift */; };
+		B6BFED33274FDC6200805399 /* RUGunarathna_COBSCComp201_019UITestsLoginLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BFED32274FDC6200805399 /* RUGunarathna_COBSCComp201_019UITestsLoginLaunchTests.swift */; };
 		B6E8EB96274450810005D255 /* SingUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E8EB95274450810005D255 /* SingUpView.swift */; };
 		B71766579A57F4CDEB4A50D9 /* Pods_RUGunarathna_COBSCComp201_019Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 766CC11CC016AC0655783B6D /* Pods_RUGunarathna_COBSCComp201_019Tests.framework */; };
 		D65C83571BA538A00E9860F6 /* Pods_RUGunarathna_COBSCComp201_019_RUGunarathna_COBSCComp201_019UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8140437A229D5359E6CAF6 /* Pods_RUGunarathna_COBSCComp201_019_RUGunarathna_COBSCComp201_019UITests.framework */; };
@@ -47,6 +49,13 @@
 			remoteInfo = "RUGunarathna-COBSCComp201-019";
 		};
 		B690C40A274432010027A389 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B690C3E7274431FA0027A389 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B690C3EE274431FB0027A389;
+			remoteInfo = "RUGunarathna-COBSCComp201-019";
+		};
+		B6BFED34274FDC6200805399 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B690C3E7274431FA0027A389 /* Project object */;
 			proxyType = 1;
@@ -91,6 +100,9 @@
 		B6A131DE2746D027008FBCC8 /* ParkingSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParkingSlot.swift; sourceTree = "<group>"; };
 		B6A230A4274B72DF0020A58C /* SettingModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModels.swift; sourceTree = "<group>"; };
 		B6B00EF02749902700C4AA72 /* BookScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookScreen.swift; sourceTree = "<group>"; };
+		B6BFED2E274FDC6200805399 /* RUGunarathna-COBSCComp201-019UITestsLogin.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RUGunarathna-COBSCComp201-019UITestsLogin.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6BFED30274FDC6200805399 /* RUGunarathna_COBSCComp201_019UITestsLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RUGunarathna_COBSCComp201_019UITestsLogin.swift; sourceTree = "<group>"; };
+		B6BFED32274FDC6200805399 /* RUGunarathna_COBSCComp201_019UITestsLoginLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RUGunarathna_COBSCComp201_019UITestsLoginLaunchTests.swift; sourceTree = "<group>"; };
 		B6E8EB95274450810005D255 /* SingUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SingUpView.swift; path = "../New Group/SingUpView.swift"; sourceTree = "<group>"; };
 		E167FADAAE6E131637A3C001 /* Pods_RUGunarathna_COBSCComp201_019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RUGunarathna_COBSCComp201_019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F317D09184E250B25EF4D62C /* Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests.release.xcconfig"; path = "Target Support Files/Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests/Pods-RUGunarathna-COBSCComp201-019-RUGunarathna-COBSCComp201-019UITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +131,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D65C83571BA538A00E9860F6 /* Pods_RUGunarathna_COBSCComp201_019_RUGunarathna_COBSCComp201_019UITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6BFED2B274FDC6200805399 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +195,7 @@
 				B690C3F1274431FB0027A389 /* RUGunarathna-COBSCComp201-019 */,
 				B690C402274432000027A389 /* RUGunarathna-COBSCComp201-019Tests */,
 				B690C40C274432010027A389 /* RUGunarathna-COBSCComp201-019UITests */,
+				B6BFED2F274FDC6200805399 /* RUGunarathna-COBSCComp201-019UITestsLogin */,
 				B690C3F0274431FB0027A389 /* Products */,
 				2B88DCDB68310CAF1B3EB5FC /* Pods */,
 				835C2C3E44B8E0EB758552D4 /* Frameworks */,
@@ -188,6 +208,7 @@
 				B690C3EF274431FB0027A389 /* RUGunarathna-COBSCComp201-019.app */,
 				B690C3FF274432000027A389 /* RUGunarathna-COBSCComp201-019Tests.xctest */,
 				B690C409274432010027A389 /* RUGunarathna-COBSCComp201-019UITests.xctest */,
+				B6BFED2E274FDC6200805399 /* RUGunarathna-COBSCComp201-019UITestsLogin.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -257,6 +278,15 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		B6BFED2F274FDC6200805399 /* RUGunarathna-COBSCComp201-019UITestsLogin */ = {
+			isa = PBXGroup;
+			children = (
+				B6BFED30274FDC6200805399 /* RUGunarathna_COBSCComp201_019UITestsLogin.swift */,
+				B6BFED32274FDC6200805399 /* RUGunarathna_COBSCComp201_019UITestsLoginLaunchTests.swift */,
+			);
+			path = "RUGunarathna-COBSCComp201-019UITestsLogin";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -321,6 +351,24 @@
 			productReference = B690C409274432010027A389 /* RUGunarathna-COBSCComp201-019UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		B6BFED2D274FDC6200805399 /* RUGunarathna-COBSCComp201-019UITestsLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6BFED38274FDC6200805399 /* Build configuration list for PBXNativeTarget "RUGunarathna-COBSCComp201-019UITestsLogin" */;
+			buildPhases = (
+				B6BFED2A274FDC6200805399 /* Sources */,
+				B6BFED2B274FDC6200805399 /* Frameworks */,
+				B6BFED2C274FDC6200805399 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6BFED35274FDC6200805399 /* PBXTargetDependency */,
+			);
+			name = "RUGunarathna-COBSCComp201-019UITestsLogin";
+			productName = "RUGunarathna-COBSCComp201-019UITestsLogin";
+			productReference = B6BFED2E274FDC6200805399 /* RUGunarathna-COBSCComp201-019UITestsLogin.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -339,6 +387,10 @@
 						TestTargetID = B690C3EE274431FB0027A389;
 					};
 					B690C408274432010027A389 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = B690C3EE274431FB0027A389;
+					};
+					B6BFED2D274FDC6200805399 = {
 						CreatedOnToolsVersion = 13.1;
 						TestTargetID = B690C3EE274431FB0027A389;
 					};
@@ -363,6 +415,7 @@
 				B690C3EE274431FB0027A389 /* RUGunarathna-COBSCComp201-019 */,
 				B690C3FE274432000027A389 /* RUGunarathna-COBSCComp201-019Tests */,
 				B690C408274432010027A389 /* RUGunarathna-COBSCComp201-019UITests */,
+				B6BFED2D274FDC6200805399 /* RUGunarathna-COBSCComp201-019UITestsLogin */,
 			);
 		};
 /* End PBXProject section */
@@ -387,6 +440,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		B690C407274432010027A389 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6BFED2C274FDC6200805399 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -541,6 +601,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B6BFED2A274FDC6200805399 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6BFED31274FDC6200805399 /* RUGunarathna_COBSCComp201_019UITestsLogin.swift in Sources */,
+				B6BFED33274FDC6200805399 /* RUGunarathna_COBSCComp201_019UITestsLoginLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -553,6 +622,11 @@
 			isa = PBXTargetDependency;
 			target = B690C3EE274431FB0027A389 /* RUGunarathna-COBSCComp201-019 */;
 			targetProxy = B690C40A274432010027A389 /* PBXContainerItemProxy */;
+		};
+		B6BFED35274FDC6200805399 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B690C3EE274431FB0027A389 /* RUGunarathna-COBSCComp201-019 */;
+			targetProxy = B6BFED34274FDC6200805399 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -835,6 +909,48 @@
 			};
 			name = Release;
 		};
+		B6BFED36274FDC6200805399 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nibm.RUGunarathna-COBSCComp201-019UITestsLogin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RUGunarathna-COBSCComp201-019";
+			};
+			name = Debug;
+		};
+		B6BFED37274FDC6200805399 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "nibm.RUGunarathna-COBSCComp201-019UITestsLogin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RUGunarathna-COBSCComp201-019";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -870,6 +986,15 @@
 			buildConfigurations = (
 				B690C41A274432010027A389 /* Debug */,
 				B690C41B274432010027A389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6BFED38274FDC6200805399 /* Build configuration list for PBXNativeTarget "RUGunarathna-COBSCComp201-019UITestsLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6BFED36274FDC6200805399 /* Debug */,
+				B6BFED37274FDC6200805399 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
